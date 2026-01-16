@@ -121,7 +121,77 @@ header #nav .nav-menu a i{
 
 
 
+/* product collection section */
+#collection{
+    max-width: 1047px;
+    margin: 100px auto;
+}
+#collection .collection-description{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
 
+#collection .product-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+#collection .product-container .product{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 15%);
+}
+#collection .product-container .product .product-image{
+    margin-bottom: 1rem;
+
+}
+#collection .product-container .product .product-content .product-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--text-gray);
+}
+#collection .product-container .product .product-content .product-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 87%);
+}
+#collection .product-container .product .product-content .star-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+#collection .product-container .product .product-content .star-container .star-image {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+#collection .product-container .product .product-content .star-container .star-image img{
+    max-width: 1rem;
+    max-height: 1rem;
+    
+}
+#collection .product-container .product .product-content .star-container .star-ratings{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: #5E6366;
+    
+}
+#collection .product-container .product .product-content .product-description{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    color: #787885;
+}
 
 
 
@@ -207,4 +277,22 @@ header #nav .nav-menu a i{
         max-width: 60px;
     }
 
+
+    /* product container */
+    #collection {
+        padding: 1rem;
+    }
+    #collection .product-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+}
+    #collection .product-container .product .product-image img{
+        max-width: 100%;
+    }
+    #collection .product-container .product .product-content .product-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 143%;
+}
 }
