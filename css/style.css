@@ -9,7 +9,7 @@ body{
 /* variable colors and fonts */
 :root{
     --text-color:#3A3A3A;
-    --button-color:#3A3A3A;
+    --button-color:#E02C6D;
     --text-gray:#18191F;
     --footer-color:#0A0826;
 
@@ -30,6 +30,19 @@ body{
         font-size: 24px;
         font-weight: bold;
         color: var(--text-color);
+    }
+
+    .primary-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--button-color);
+        border-style: none;
+        color: #fff;
+        padding: 10px 24px;
+        border-radius: 41px;
+        font-size: 16px;
+        font-weight: bold;
     }
 
 
@@ -57,4 +70,141 @@ header #nav .nav-menu a{
 header #nav .nav-menu a i{
     font-size: 24px;
     color:#000 ;
+}
+
+/* banner section */
+#banner{
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner .banner-content{
+    max-width: 582px;
+}
+#banner h1{
+    font-size: 3.25rem;
+    font-weight: bold;
+    line-height: 70px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+#banner .banner-description{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+#banner .banner-image{
+    background: url(/images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 475px;
+    width: 475px;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner .banner-image img{
+    max-width: 440px;
+}
+
+/* featured section */
+#featured{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+@media  screen and (max-width:576px) {
+    /* shared style */
+    
+
+    #nav{
+        flex-direction: column;
+    }
+    header #nav .nav-menu{
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    header #nav .nav-menu a{
+        font-size: 14px;
+        line-height: 100%;
+    }
+    header #nav .nav-menu a i {
+        font-size: 18px;
+    }
+
+    /* banner section */
+    #banner{
+        flex-direction: column-reverse;
+        
+    }
+    #banner .banner-image{
+        width: 100%;
+        background-size: 90%;
+        height: 500px;
+    }
+    #banner .banner-image img{
+        max-width: 80%;
+    }
+    #banner .banner-content{
+        text-align: center;
+        padding: 1rem;
+    }
+    #banner .banner-content h1{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin-bottom:6px;
+    }
+    #banner .banner-description{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    }
+    #banner .banner-content .btn-container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* featured section */
+    #featured{
+        justify-content: center;
+        margin-top: 70px;
+        gap: 20px;
+        flex-wrap: wrap;
+    
+    }
+    #featured .item img{
+        max-width: 60px;
+    }
+
 }
