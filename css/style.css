@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+/* variable colors and fonts */
+:root{
+    --text-color:#3A3A3A;
+    --button-color:#3A3A3A;
+    --text-gray:#18191F;
+    --footer-color:#0A0826;
+
+}
+
+
+/* shared styles*/
+    .container{
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .logo-text{
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+
+
+
+/* normal styes */
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header #nav{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+header #nav .nav-menu {
+    list-style: none;
+    gap: 34px;
+}
+header #nav .nav-menu a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+header #nav .nav-menu a i{
+    font-size: 24px;
+    color:#000 ;
+}
