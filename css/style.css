@@ -193,16 +193,68 @@ header #nav .nav-menu a i{
     color: #787885;
 }
 
+/* featured product */
+#featured-product {
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#featured-product img{
+    max-width: 404px;
+}
+#featured-product .fp-content .fp-title{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 16px;
+    color: var(--footer-color);
+}
+#featured-product .fp-content .fp-description{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    margin-bottom: 16px;
+    color: #6C6C6C;
+}
+#featured-product .fp-content .fp-btn{
+    border-radius: 0;
+}
 
+/* footer  */
 
-
-
-
-
-
-
-
-
+footer{
+    background-color: var(--footer-color);
+}
+.footer-content{
+    text-align: center;
+    padding: 100px 0;
+}
+.footer-content .footer-logo-text{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-content .copy-right{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.footer-content .social-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer-content .social-link ul{
+    gap: 1rem;
+    list-style: none;
+}
+.footer-content .social-link ul li a img{
+    max-width: 2rem;
+}
 
 
 
@@ -294,5 +346,53 @@ header #nav .nav-menu a i{
     font-size: 14px;
     font-weight: 400;
     line-height: 143%;
+}
+
+    /* featured product */
+    #featured-product {
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 1rem;
+}
+    #featured-product img{
+    max-width: 100%;
+}
+    #featured-product .fp-content{
+        text-align: center;
+    }
+    #featured-product .fp-content .btn-container{
+        display: flex;
+        justify-content: center;                
+    }
+    #featured-product .fp-content .fp-title{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+    #featured-product .fp-content .fp-description{
+    font-size: 16px;
+    font-weight:500;
+    line-height: 22px;
+}
+
+    /* footer */
+    .footer-content{
+        padding: 50px 0;
+    }
+    .footer-content .footer-logo-text{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .footer-content .copy-right{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.footer-content .social-link ul{
+    gap: 7px;
+}
+.footer-content .social-link ul li a img{
+    max-width: 1.5rem;
 }
 }
